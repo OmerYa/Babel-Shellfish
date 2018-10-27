@@ -13,7 +13,7 @@ This is still a preliminary version intended as a POC. The code tested against P
 
 # Installation Usage
  - Install-Babel-Shellfish.bat [DebugOut] [ScanWithAMSI] [LogAMSI] [BabelShellfish Path] [LogFolderPath]
- - Example: Install-Babel-Shellfish.bat 1 0 1 "c:\Babel-Shellfish\BabelShellfishProfiler.dll"  "c:\Babel-Shellfish\Logs\"
+ - Example: Install-Babel-Shellfish.bat 0 1 0 "c:\Babel-Shellfish\BabelShellfishProfiler.dll"  "c:\Babel-Shellfish\Logs\"
  - [DebugOut] - Set to 1 to send deobfuscated commands to OutputDebugString.
  - [ScanWithAMSI] - Set to 1 to scan deobfuscated scripts with AMSI.
  - [LogAMSI] - Set to 1 to log the scripts sent to AMSI (curiosity feature).
