@@ -1,0 +1,5 @@
+LIBRARY "BabelShellfishProfiler.Dll"
+
+EXPORTS
+    DllCanUnloadNow PRIVATE
+    DllGetClassObject PRIVATE
