@@ -187,8 +187,16 @@ namespace BabelShellfish
             Console.WriteLine(str);
         }
 
-        void GetObjectString(StringBuilder sb, object o)
+        void GetObjectString(StringBuilder sb, object objInput)
         {
+            object o = objInput;
+
+            PSObject pso = o as PSObject;
+            if (null != pso)
+            {
+                o = pso.BaseObject;
+            }
+
             if (null == o)
                 sb.Append("$null");
             else
